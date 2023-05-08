@@ -206,4 +206,28 @@
         height: 70px;
         width: 70px;
     }
+
+    @media (orientation: landscape) {
+        #social-container {
+            flex-direction: column;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            padding: 1px;
+        }
+
+        .icon-button {
+            height: 40px;
+            width: 40px;
+        }
+
+        #wallet-selection-center {
+            font-size: 1em;
+            width: 500px;
+            margin: -100px 250px 0 -250px;
+        }
+
+    }
 }
