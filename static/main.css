@@ -92,12 +92,12 @@
 }
 
 #wallet-selection-center {
-    width: 380px;
+    width: 560px;
     pointer-events: all;
     position: absolute;
     top: 40%;
     left: 50%;
-    margin: -100px 0 0 -190px;
+    margin: -280px 0 0 -280px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.7);
     padding: 20px;
@@ -228,6 +228,5 @@
             width: 500px;
             margin: -100px 250px 0 -250px;
         }
-
     }
 }
