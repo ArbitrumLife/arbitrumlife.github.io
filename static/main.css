@@ -190,8 +190,18 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+#byron {
+    width: 300px;
+    text-align: right;
+    float: right;
+}
 
 @media only screen and (hover: none) and (pointer: coarse) {
+    #byron {
+        display: none;
+
+    }
+
     #wallet-selection-center {
         font-size: 2em;
     }
