@@ -16,13 +16,38 @@
     -ms-user-select: none;
 }
 
+#c0 {
+    z-index: 2000;
+    /* max-width: 1000px; */
+    justify-content: center;
+    display: flex;
+}
+
+#wallet-selection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: normal;
+  align-content: normal;
+}
+
+.c1i {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
 #canvas-container {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .icon {
@@ -71,33 +96,9 @@
 
 /* wallet selection overlay */
 
-#wallet-selection {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
-    pointer-events: none;
-}
-
-#wallet-selection-bg {
-    position: fixed;
-    top: -10px;
-    bottom: -10px;
-    right: -10px;
-    left: -10px;
-    background: none;
-    pointer-events: all;
-}
-
 #wallet-selection-center {
     width: 560px;
     pointer-events: all;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    margin: -280px 0 0 -280px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.7);
     padding: 20px;
@@ -145,13 +146,6 @@
     cursor: not-allowed;
 }
 
-/* submit button spinner */
-.spinning {
-    content: url('/static/icons/spinner-solid.svg');
-    animation: rotate 3s infinite;
-    animation-timing-function: linear;
-}
-
 @-webkit-keyframes rotate {
     from { -webkit-transform: rotate(0deg) }
     to { -webkit-transform: rotate(360deg) }
@@ -164,10 +158,6 @@
         justify-content: center;
         align-items: flex-end;
         align-content: center;
-        position: fixed;
-        bottom: 10%;
-        left: 0;
-        right: 0;
         width: 100%;
         z-index: 10;
 }
@@ -203,7 +193,7 @@
     }
 
     #wallet-selection-center {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .icon {
@@ -218,10 +208,6 @@
     }
 
     @media (orientation: landscape) {
-        #social-container {
-            flex-direction: column;
-        }
-
         .icon {
             width: 40px;
             height: 40px;
@@ -235,8 +221,6 @@
 
         #wallet-selection-center {
             font-size: 1em;
-            width: 500px;
-            margin: -100px 250px 0 -250px;
         }
     }
 }
