@@ -186,6 +186,27 @@
     float: right;
 }
 
+#game {
+    text-align: center;
+    width: 200px;
+    font-size: 100px;
+    text-decoration: none;
+    align: center;
+    color: black;
+
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    vertical-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(220, 220, 220, 0.7);
+    backdrop-filter: blur(4px);
+    padding: 8px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+
 @media only screen and (hover: none) and (pointer: coarse) {
     #byron {
         display: none;
